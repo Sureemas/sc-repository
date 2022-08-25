@@ -4,10 +4,11 @@ on:
   push:
     branches:
       - "main"
-       
-  jobs:
+      - "develop"
+      - "release"
+jobs:
     lab-job:
-      run-ons: ubuntu-latest
-      steps:
-        - name: Start job
-          run: echo 'Hello DevOps'
+        run-ons: ubuntu-latest
+          steps:
+          - name: Start job
+            run: echo 'Hello DevOps'   
