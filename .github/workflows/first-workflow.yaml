@@ -7,8 +7,8 @@ on:
       - "develop"
       - "release"
 jobs:
-    lab-job:
-        run-ons: ubuntu-latest
-          steps:
+  lab-job:
+      runs-on: ubuntu-latest
+      steps:
           - name: Start job
             run: echo 'Hello DevOps'   
